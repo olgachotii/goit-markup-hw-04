@@ -190,8 +190,8 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-image: url(../images/hero_beckground.jpg),
-    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero_beckground.jpg);
   background-size: 1600px;
   background-repeat: no-repeat;
   background-position: center;
@@ -246,6 +246,18 @@ ul {
 .calling .list,
 .team .list {
   display: flex;
+}
+
+.features .icon-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--section-second-color);
+  border-radius: 4px;
 }
 
 .features .item + .item,
