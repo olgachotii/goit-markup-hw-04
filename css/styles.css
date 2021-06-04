@@ -146,18 +146,14 @@ ul {
   margin-left: 50px;
 }
 
-.auth-nav .auth {
-  display: flex;
-  align-items: center;
-}
-
 .auth-nav .icon {
   fill: currentColor;
   margin-right: 10px;
 }
 
 .auth-nav .link {
-  display: block;
+  display: flex;
+  align-items: center;
 
   color: var(--primaru-text-color);
 
@@ -307,6 +303,8 @@ ul {
   line-height: 2;
 }
 
+/* team */
+
 .team {
   background-color: var(--section-second-color);
 }
@@ -341,11 +339,22 @@ ul {
   justify-content: center;
 }
 
+.icons .item {
+  width: 44px;
+  height: 44px;
+}
+
 .icons .link {
-  display: block;
-  fill: var(--icon-color);
-  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon-color);
+  width: 100%;
+  height: 100%;
+
   border-radius: 50%;
+
+  fill: currentColor;
 }
 
 .icons .link:hover,
@@ -358,27 +367,31 @@ ul {
   margin-left: 10px;
 }
 
+/*clients  */
+
 .clients .list {
   display: flex;
-  /* align-items: baseline; */
 }
 
 .clients .item + .item {
   margin-left: 30px;
 }
 
-.clients .cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.clients .item {
   width: 170px;
   height: 92px;
-
-  border: 1px solid;
-  border-radius: 4px;
 }
 
 .clients .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid;
+  border-radius: 4px;
+
   color: var(--icon-color);
 }
 
